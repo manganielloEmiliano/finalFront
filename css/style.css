@@ -36,7 +36,7 @@ body {
 
 .principal {
     grid-area: main;
-    background-image: url(../images/desktop-image-hero-1.jpg);
+    background-image: url(../images/mobile-image-hero-1.jpg);
     min-height: 550px;
     background-size: cover;
     background-position: center;
@@ -125,19 +125,20 @@ body {
     grid-area: about;
 }
 
-@media (min-width: 375px) {
-    .container {
-        width: 90%;
-        padding: 60px 0;
-    }
-}
+
 
 @media (min-width: 1440px) {
     .container {
         width: 85%;
         padding: 70px 0;
     }
-
+    .principal {
+        grid-area: main;
+        background-image: url(../images/desktop-image-hero-1.jpg);
+        min-height: 550px;
+        background-size: cover;
+        background-position: center;
+    }
     .main {
         grid-template-columns: repeat(7, 1fr);
         grid-template-areas:
